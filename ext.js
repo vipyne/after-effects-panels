@@ -1,10 +1,66 @@
 
 function onLoaded() {
-    var csInterface = new CSInterface();
-	
-    var appName = csInterface.hostEnvironment.appName;
+  // loadJSX();
+
+  // window.location.href = "https://engine-ci.animoto.com/dashboard/";
+  // window.location.href = "http://localhost:8000/";
+
+  // document.write('da f');
+  // var derp = magic_ext();
+  // window.addEventListener('click', )
+
+  // var req = new XMLHttpRequest();
+
+  // function testing() {
+  //   setTimeout(function() {
+  //     document.write('   one one poop ');
+  //   }, 7000);
+  // }
+
+  // function testingTwo() {
+  //   setTimeout(function() {
+  //     document.write('   poop   pooop ');
+  //   }, 4000);
+  // }
+
+  // function theTest() {
+  //   testing();
+  //   // testingTwo();
+  // }
+
+  // req.open('post', 'http://localhost/', true); 
+  // req.send(theTest());
+  // if(req.status == 200) {
+  //     alert(req.responseText);
+  // }
+
+  // $.ajax({
+  //   method: 'post',
+  //   url: "http://localhost:6454/",
+  //   data: function() {
+  // document.write('da f');
+  //     return "poop";
+  //   }
+  // })
+  loadJSX();
+  alert('popo');
+  var file = "~/Desktop/item12.txt";
+  alert('popo');
+  var f = new File([""], file);
+  alert('popo');
+  f.open("w");
+  alert('popo');
+  f.writeln("------3q45q34543----");
+  // f.writeln(JSON.stringify(app.project));
+  f.writeln("-----345-----");
+  // f.writeln(JSON.stringify(app.project.activeItem.layer(1)));
+  f.writeln("----------eof");
+  alert('popo');
+  f.close();
+  alert('popo');
     
-	loadJSX();
+  // loadJSX();
+
 /*
     var appNames = ["AEFT"];
     for (var i = 0; i < appNames.length; i++) {
@@ -65,7 +121,7 @@ function updateThemeWithAppSkinInfo(appSkinInfo) {
 	    var inputBackgroundColor;
 	    var gradientHighlightBg;
 	    if(isPanelThemeLight) {
-	    	fontColor = "#000000;";
+	    	fontColor = "#f4f4f4;";
 	    	disabledFontColor = "color:" + toHex(panelBackgroundColor, -70) + ";";
 	    	borderColor = "border-color: " + toHex(panelBackgroundColor, -90) + ";";
 	    	inputBackgroundColor = toHex(panelBackgroundColor, 54) + ";";
@@ -160,8 +216,11 @@ function onAppThemeColorChanged(event) {
  * folder [ExtensionRoot]/jsx will be loaded. 
  */
 function loadJSX() {
+    // document.write('esdfa');
+  
     var csInterface = new CSInterface();
     var extensionRoot = csInterface.getSystemPath(SystemPath.EXTENSION) + "/jsx/";
+    // document.write('extension root: ', extensionRoot);
     csInterface.evalScript('$._ext.evalFiles("' + extensionRoot + '")');
 }
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
-<ExtensionManifest Version="4.0" ExtensionBundleId="com.MyCompany.GenerateComplexComp"  ExtensionBundleVersion="1.0.0"
-		ExtensionBundleName="GenerateComplexComp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ExtensionManifest Version="4.0" ExtensionBundleId="com.MyCompany.simpleTesttake2"  ExtensionBundleVersion="1.0.0"
+		ExtensionBundleName="simpleTesttake2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <ExtensionList>
-		<Extension Id="com.MyCompany.GenerateComplexComp.extension1" Version="1.0" />
+		<Extension Id="com.MyCompany.simpleTesttake2.extension1" Version="1.0" />
 	</ExtensionList>
     
 	<ExecutionEnvironment>
@@ -19,7 +19,7 @@
 	</ExecutionEnvironment>
     
 	<DispatchInfoList>
-		<Extension Id="com.MyCompany.GenerateComplexComp.extension1">
+		<Extension Id="com.MyCompany.simpleTesttake2.extension1">
 			<DispatchInfo >
 				<Resources>
                     <MainPath>./index.html</MainPath>
@@ -30,7 +30,7 @@
 				</Lifecycle>
 				<UI>
 					<Type>Panel</Type>
-					<Menu>Generate Complex Comp (SDK sample)</Menu>
+					<Menu>check this simple test out</Menu>
 					<Geometry>
 						<Size>
 							<Height>100</Height>
