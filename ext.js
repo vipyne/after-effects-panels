@@ -43,13 +43,15 @@ function onLoaded() {
   //   }
   // })
   loadJSX();
-  alert('popo');
+  alert('1 popo');
   var file = "~/Desktop/item12.txt";
-  alert('popo');
-  var f = new File([""], file);
-  alert('popo');
+  alert('2 popo');
+  try {
+    var f = new File(file);
+  } catch (e) {alert('e:', JSON.stringify(e)}
+  alert('3 popo');
   f.open("w");
-  alert('popo');
+  alert('4 popo');
   f.writeln("------3q45q34543----");
   // f.writeln(JSON.stringify(app.project));
   f.writeln("-----345-----");
