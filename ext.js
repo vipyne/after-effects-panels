@@ -1,11 +1,12 @@
 
 function onLoaded() {
+  // window.performance.memory.jsHeapSizeLimit = 1620000000;
+  // window.performance.memory.jsHeapSizeLimit = 11620000000;
   loadJSX();
   // document.write('da f');
 
   // window.location.href = "https://www.google.com";
   // window.location.href = "https://engine-ci.animoto.com/dashboard/";
-  // window.location.href = "http://localhost:8000/";
   // var derp = magic_ext();
   var ae = JSON.stringify(window.__adobe_cep__.getHostEnvironment());
 
@@ -14,59 +15,12 @@ function onLoaded() {
   var csInterface = new CSInterface();
 
   // csInterface.addEventListener('com.adobe.cep.test', testingTwo)
-  var theKey, theValue;
-
+    
   function derp() {
-    var cache = [];
-    // try { document.write('derpy') } catch (e) {alert('ack, e: ', e) };
-    // try { JSON.stringify(Project) } catch (e) {alert('ack, e: ', e) };
-    // try { document.write(JSON.stringify(csInterface.vipynesConsoleLog()) ) } catch (e) {alert('ack, e: ', e) };
-    document.write('\n');
-    // try { document.write(JSON.stringify(window.__adobe_cep__.app)) } catch (e) {document.write('app: ' + e) };
-    try { document.write(JSON.stringify(window, function(key, value) {
-      theKey = key;
-      theValue = value;
-      
-      if (typeof value === 'object' && value !== null) {
-        if (cache.indexOf(value) !== -1) {
-          return;
-        }
-        cache.push(value);
-      }
-
-      // document.write('valueeeeee;;;', value);
-
-      return value;
-
-
-      // JSON.stringify(value, function(k, v) {
-      //   document.write('K:', k);
-      //   document.write('V:', v);
-      //   if (k == undefined) {
-      //     return 'k undefined';
-      //   }
-      //   if (v == undefined) {
-      //     return 'v undefined';
-      //   }
-      // });
-    })) } catch (e) {document.write('1::: ' + e) };
-    // try { document.write(JSON.parse(document)) } catch (e) {document.write('1 ack, doc nw eeeeeeeeeee: ' + e) };
-    // try { document.write(JSON.parse(app)) } catch (e) {document.write('2::: ' + e) };
-    // try { document.write(JSON.stringify(window.__adobe_cep__)) } catch (e) {document.write('3::: ' + e) };
-    // try { document.write(JSON.stringify(app.project)) } catch (e) {document.write('4::: ' + e) };
-    // try { document.write(JSON.stringify(window) } catch (e) {alert('ack, e: ', e) };
-    // try { document.write(JSON.stringify(window.__adobe_cep__)) } catch (e) {alert('ack, e: ', e) };
-    cache = null;
+    
   }
 
   derp();
-
-
-
-  document.write('KEY:', theKey);
-  document.write('VALUE:', theValue);
-
-
 
   function testing() {
     setTimeout(function() {
